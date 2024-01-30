@@ -1,0 +1,19 @@
+/* GALERIA */
+
+div.gallery-autores {
+	margin: 0.3em;
+	border: 0.1em solid #c6c6ff;
+	float: left;
+	overflow: hidden;
+}
+
+div.gallery-autores img {
+	height: 100px;
+	object-fit: cover;
+	width: 100px;
+}
+
+div.desc-autores {
+	padding: 0.5em;
+	text-align: center;
+}

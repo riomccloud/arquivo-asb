@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<link rel="icon" type="image/x-icon" href="/recursos/imagens/acervo/favicon.png">
+		<link rel="stylesheet" type="text/css" href="/estilo.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Como adicionar novas texturas para mapas no SLADE - Acervo SRB2 Brasil</title>
+	</head>
+	<body>
+		<div class="conteiner">
+			<div class="caixa-simples caixa-topo">
+				<p>página atualizada pela última vez em 25 de janeiro de 2024</p>
+				<p><a href="https://github.com/riomccloud/acervo-srb2-brasil">ver o código-fonte no GitHub</a></p>
+			</form>
+			</div>
+			<a href="/index.html">
+				<div class="cabecalho">
+					<img src="/recursos/imagens/acervo/logotipo-menor.png">
+				</div>
+			</a>
+		</div>
+		<div class="conteiner">
+			<div class="caixa-simples">
+				<a href="/add-ons/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/add-ons.png"></a>
+				<a href="/artigos/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/artigos.png"></a>
+				<a href="/autores/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/autores.png"></a>
+				<a href="/comunidades/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/comunidades.png"></a>
+				<a href="/torneios/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/torneios.png"></a>
+				<a href="/acervo/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/acervo.png"></a>
+			</div>
+			<nav class="caixa-simples">
+				<p>/ artigos / <a href="/artigos/tutoriais/index.html">tutoriais</a> / <a href="/artigos/tutoriais/desenvolvimento/index.html">desenvolvimento</a> / <a href="/artigos/tutoriais/desenvolvimento/universal/index.html">universal</a> / <strong>você está aqui</strong></p>
+			</nav>
+			<div class="corpo">
+			<h2>Como adicionar novas texturas para mapas no SLADE</h2>
+			<div class="aviso aviso-informacao centralizar-vertical">
+				<img src="/recursos/imagens/acervo/icones/informacao.png" style="width: 30px;">
+				<p>Este trabalho, feito em 2022 por <a href="/autores/mattioz.html">Mattioz</a>, foi disponibilizado como domínio público.</p>
+			</div>
+			<h3>Introdução</h3>
+			<p>Texturas customizadas sempre dão um charme a mais para um mapa ou pista. Você não precisa se limitar ao conteúdo que o jogo base disponibiliza, podendo criar seus próprios recursos da maneira que desejar. Este tutorial ensina como implementá-las corretamente em um add-on.</p>
+			<h3>Texturas estáticas</h3>
+			<table class="informacoes">
+				<tr>
+					<td>
+						<img src="/recursos/imagens/artigos/tutoriais/desenvolvimento/universal/como-adicionar-novas-texturas-para-mapas-no-slade/1.png">
+					</td>
+				</tr>
+				<tr>
+					<td>Lista de entradas necessárias.</td>
+				</tr>
+			</table>
+			<p>Abra o arquivo de add-on do seu mapa ou pista no SLADE indo no menu <code>File</code> e depois na opção <code>Open</code>. Com o add-on aberto, localize o ícone de folha verde ao lado da lista de arquivos chamado <code>New Entry</code>. Clique sobre ele (ou utilize o atalho <strong>Ctrl + N</strong>) e repita esse processo seis vezes para criar as seguintes entradas necessárias, em ordem: <code>TX_START</code>, <code>TX_END</code>, <code>F_START</code>, <code>F_END</code>, <code>S_START</code> e <code>S_END</code>.</p>
+			<p>É recomendado utilizar texturas onde <strong>ambas</strong> as colunas horizontal e vertical são uma potência de dois (e.g. <strong>16</strong> x 16, <strong>32</strong></storng> x 32, <strong>64</strong> x 64, <strong>128</strong> x 128 e <strong>1024</strong> x 1024), mas não é obrigatório. No entanto, para evitar problemas na renderização via software, a coluna horizontal <strong>deve</strong> ser uma potência de dois.</p>
+			<p>O jogo interpretará todos os itens localizados entre as entradas <code>TX_START</code> e <code>TX_END</code> como <strong>texturas de parede</strong> (incluindo cercas). Para adicionar uma textura, selecione a entrada <code>TX_START</code>, clique no botão <code>New Entry</code> e na janela que abriu digite o nome desejado. Clique sobre o ícone de seta para baixo verde chamado <code>Import Files</code> (ou utilize o atalho <strong>Ctrl + Shift + I</strong>) e escolha o arquivo de textura desejado.</p>
+			<table class="informacoes">
+				<tr>
+					<td>
+						<img src="/recursos/imagens/artigos/tutoriais/desenvolvimento/universal/como-adicionar-novas-texturas-para-mapas-no-slade/2.png">
+					</td>
+				</tr>
+				<tr>
+					<td>Janela de conversão.</td>
+				</tr>
+			</table>
+			<div class="aviso aviso-alerta centralizar-vertical">
+				<img src="/recursos/imagens/acervo/icones/alerta.png" style="width: 30px;">
+				<p><strong>Atenção!</strong>
+				<br>Há um limite de caracteres para o nome da textura. Tome cuidado para não ultrapassá-lo e nem para criar um nome que entre em conflito com texturas de outro add-on.</p>
+			</div>
+			<p>É necessário converter a textura para um formato que o jogo compreenda. Clique sobre a textura desejada na lista de arquivos e no lado direito localize um botão contendo um quadrado vermelho, um círculo azul e uma seta para a direita azul chamado <code>Convert to...</code>. Clique sobre ele para abrir a janela de conversão de formatos gráficos. Nela, selecione as mesmas opções da figura ao lado e clique em <code>Convert</code>.</p>
+			<div class="aviso aviso-informacao centralizar-vertical">
+				<img src="/recursos/imagens/acervo/icones/informacao.png" style="width: 30px;">
+				<p><strong>Informações</strong>
+				<br>• Caso esteja adicionando texturas em um mapa para o jogo <a href="/artigos/jogos/sonic-robo-blast-2.html">Sonic Robo Blast 2</a>, selecione esta opção no menu suspenso direito;
+				<br>• Caso a textura em questão seja uma cerca, a opção <code>Enable Transparency</code> deve ser ativada.</p>
+			</div>
+			<p>Texturas de chão precisam de propriedades diferentes na hora da conversão. Além do requisito de colunas horizontal e vertical com tamanhos potência de dois ser <strong>obrigatório</strong> nesse caso, deve-se selecionar a opção <code>Doom Flat (Paletted)</code> no menu suspenso da seção <code>Convert to:</code>.</p>
+			<p>Por último, tenha ciência que texturas de <em>sprites</em> (e.g. de inimigos e objetos decorativos) devem ser inseridas entre as entradas <code>S_START</code> e <code>S_END</code>. É necessário o uso de SOCs ou scripts Lua no caso de inimigos customizados.</p>
+			<h3>Texturas animadas</h3>
+			<p>Para texturas animadas, deve-se importar cada um dos quadros da animação com um nome único seguido de número em ordem (e.g. <code>TEXT1</code>, <code>TEXT2</code> e <code>TEXT3</code>). Para fazê-la funcionar corretamente, crie uma entrada chamada <code>ANIMDEFS</code>. Clique com o botão direito do mouse sobre ela, vá em <code>View As</code> e depois em <code>View as Text</code>. Baseie-se na figura localizada após o seguinte parágrafo para escrever o arquivo.</p>
+			<p>Cada linha é uma esquete de animação diferente, sendo a estrutura básica <strong>Prefixo + Nome da Textura de Quadro Inicial + <em>Range</em> + Nome da Textura de Quadro Final + <em>Tics</em> + Valor</strong>. No prefixo, digite <code>Texture</code> (para texturas de parede) ou <code>Flat</code> (para texturas de chão); no nome da textura de quadro inicial, digite o nome da textura que representa o primeiro quadro da animação (e.g. <code>TEXT1</code>); no nome da textura de quadro final, digite o nome da textura que representa o último quadro da animação (e.g. <code>TEXT3</code>); no valor, escolha um número entre 1 e 20, sendo um o menor tempo de duração de quadros (ou seja, animação mais rápida) e 20 o maior tempo de duração de quadros (ou seja, animação mais devagar).</p>
+			<table class="informacoes" style="float: none; margin: 0;">
+				<tr>
+					<td>
+						<img src="/recursos/imagens/artigos/tutoriais/desenvolvimento/universal/como-adicionar-novas-texturas-para-mapas-no-slade/3.png" style="max-width: 100%; width: revert;">
+					</td>
+				</tr>
+				<tr>
+					<td>Arquivo <code>ANIMDEFS</code>.</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<div class="conteiner" style="margin-bottom: 1em;">
+			<div class="caixa-simples">
+				<p>Feito com ❤️ pela comunidade brasileira de Sonic Robo Blast 2 desde 2021.
+				<br>Todos os conteúdos presentes são de propriedade de seus respectivos autores. Para mais informações, <a href="/acervo/copyright.html">clique aqui</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+/* GALERIA */
+
+div.gallery-torneios {
+	margin: 0.3em;
+	border: 0.1em solid #c6c6ff;
+	float: left;
+	max-width: 250px;
+	overflow: hidden;
+}
+
+div.gallery-torneios img {
+	height: 187px;
+	object-fit: cover;
+	width: 250px;
+}
+
+div.desc-torneios {
+	padding: 0.5em;
+	text-align: center;
+}
+
+/* CONSULTAS DE MÍDIA */
+
+@media only screen and (max-width: 650px) {
+	div.gallery-torneios {
+		margin: 0.3em 0;
+		max-width: 100%;
+	}
