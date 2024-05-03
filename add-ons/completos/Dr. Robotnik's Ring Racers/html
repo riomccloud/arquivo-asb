@@ -5,12 +5,12 @@
 		<link rel="stylesheet" type="text/css" href="/estilo.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Central Artigos | Jogos - Acervo SRB2 Brasil</title>
+		<title>Central Add-ons | Completos / SRB2Kart - Acervo SRB2 Brasil</title>
 	</head>
 	<body>
 		<div class="conteiner">
 			<div class="caixa-simples caixa-topo">
-				<p>página atualizada pela última vez em 24 de janeiro de 2024</p>
+				<p>página atualizada pela última vez em 12 de janeiro de 2024</p>
 				<p><a href="https://github.com/riomccloud/acervo-srb2-brasil">ver o código-fonte no GitHub</a></p>
 			</form>
 			</div>
@@ -29,34 +29,16 @@
 				<a href="/torneios/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/torneios.png"></a>
 				<a href="/acervo/index.html"><img src="/recursos/imagens/acervo/faixas-das-centrais/acervo.png"></a>
 			</div>
+			<nav class="caixa-simples">
+				<p>/ add-ons / <a href="/add-ons/completos/index.html">completos</a> / <strong>você está aqui</strong></p>
+			</nav>
 			<div class="corpo">
-			<h2>Central Artigos | Jogos</h2>
-			<p>A seção <strong>Jogos</strong> hospeda artigos sobre o Sonic Robo Blast 2 e seus derivados, tal como o Sonic Robo Blast 2 Kart. São, em maioria, traduções das páginas originais na <a href="https://wiki.srb2.org">SRB2 Wiki</a> para que falantes lusófonos possam consultar, tirar dúvidas e descobrir novas informações.</p>
-			<div class="gallery">
-				<a href="/artigos/jogos/sonic-robo-blast-2.html">
-					<img src="/recursos/imagens/artigos/jogos/srb2/tela-de-titulo.png">
-				</a>
-				<div class="desc"><strong>Sonic Robo Blast 2</strong></div>
+			<h2>Central Add-ons | Completos / SRB2Kart</h2>
+			<div class="lista">
+				<a href="/add-ons/completos/srb2kart/1.x/index.html"><img src="/recursos/imagens/acervo/icones/srb2kart-1-x.png" style="width: 50px;"></a>
+				<p><a href="/add-ons/completos/srb2kart/1.x/index.html">Versão 1.x</a>
+				<br>Navegar por add-ons para a versão 1.x.</p>
 			</div>
-			<div class="gallery">
-				<a href="/artigos/jogos/sonic-robo-blast-2-kart.html">
-					<img src="/recursos/imagens/artigos/jogos/srb2kart/tela-de-titulo.png">
-				</a>
-				<div class="desc"><strong>Sonic Robo Blast 2 Kart</strong></div>
-			</div>
-			<div class="gallery">
-				<a href="/artigos/jogos/sonic-robo-blast-2-persona.html">
-					<img src="/recursos/imagens/artigos/jogos/srb2persona/tela-de-titulo.png">
-				</a>
-				<div class="desc"><strong>Sonic Robo Blast 2 Persona</strong></div>
-			</div>
-			<div class="gallery">
-				<a href="/artigos/jogos/dr-robotnik-ring-racers.html">
-					<img src="/recursos/imagens/artigos/jogos/drrobotnikringracers/tela-de-titulo.png">
-				</a>
-				<div class="desc"><strong>Dr. Robotnik's Ring Racers</strong></div>
-			</div>
-			<div style="clear: both;"></div>
 			</div>
 		</div>
 		<div class="conteiner" style="margin-bottom: 1em;">
