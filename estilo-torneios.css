@@ -22,7 +22,6 @@ div.desc-torneios {
 /* CONSULTAS DE MÍDIA */
 
 @media only screen and (max-width: 650px) {
-	div.gallery-torneios {
-		margin: 0.3em 0;
+	div.gallery-torneios img {
 		max-width: 100%;
 	}
