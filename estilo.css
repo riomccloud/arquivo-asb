@@ -271,6 +271,11 @@ img.icone-pequeno {
 
 /* GALERIA */
 
+#conteiner-galeria {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 div.gallery {
 	margin: 0.3em;
 	border: 0.1em solid #c6c6ff;
