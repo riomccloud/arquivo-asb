@@ -1,11 +1,11 @@
 /* ETIQUETAS BASE */
 * {
-	cursor: url(/recursos/ponteiros/normal.png), auto;
+	cursor: url(/arquivo-asb/recursos/ponteiros/normal.png), auto;
 	vertical-align: top;
 }
 a, a:visited, a>div, a>img {
 	color: #ffff00;
-	cursor: url(/recursos/ponteiros/ligacao.png), auto;
+	cursor: url(/arquivo-asb/recursos/ponteiros/ligacao.png), auto;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -16,7 +16,7 @@ a:hover {
 	color: lightblue;
 }
 abbr {
-	cursor: url(/recursos/ponteiros/ajuda.gif), auto;
+	cursor: url(/arquivo-asb/recursos/ponteiros/ajuda.gif), auto;
 }
 blockquote {
 	background: linear-gradient(to bottom right, #404080, #252570);
@@ -26,7 +26,7 @@ blockquote {
 	padding: 1em;
 }
 body {
-	background: url(/recursos/imagens/acervo/fundo.png);
+	background: url(/arquivo-asb/recursos/imagens/acervo/fundo.png);
 	color: white;
 	font-family: Arial;
 	font-size: 15px;
